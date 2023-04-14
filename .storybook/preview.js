@@ -14,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
 
 export const decorators = [
   withThemeFromJSXProvider({
-    GlobalStyles, // Adds your GlobalStyle component to all stories
-  }),
+    GlobalStyles // Adds your GlobalStyle component to all stories
+  })
 ];
 
 const preview = {
