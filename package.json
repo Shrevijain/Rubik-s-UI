@@ -11,7 +11,8 @@
     "format": "prettier --write .",
     "lint:format": "prettier --check .",
     "lint": "eslint src/**",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "precheck": "prettier --write . && prettier --check . && eslint src/** && eslint --fix"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.4",
