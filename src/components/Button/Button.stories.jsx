@@ -5,19 +5,22 @@ export default {
   component: Button,
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' }
+    backgroundColor: { control: 'select' }
   }
 };
 
 export const Primary = {
   args: {
-    label: 'Button'
+    children: 'Button'
   }
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    children: 'Button',
     backgroundColor: 'secondary'
   }
 };
+
+// export const Primary = () => <Button label="Button" />
+// export const Secondary = () => <Button label="Button" backgroundColor="secondary" />;

@@ -1,17 +1,17 @@
 import { StyledButton } from './Button.styles';
 import PropTypes from 'prop-types';
 
-const Button = ({ label, backgroundColor = 'primary', ...rest }) => {
+const Button = ({ children, backgroundColor = 'primary', ...rest }) => {
   return (
     <StyledButton backgroundColor={backgroundColor} {...rest}>
-      {label}
+      {children}
     </StyledButton>
   );
 };
 
 Button.propTypes = {
-  backgroundColor: PropTypes.oneOf(['primary', 'secondary']),
-  label: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.oneOf(['primary', 'secondary'])
 };
 
 // Button.defaultProps = {
@@ -19,3 +19,6 @@ Button.propTypes = {
 // };
 
 export default Button;
+
+//<Button>Click Me</Button>
+//<Button label="Click Me" />
